@@ -1,0 +1,139 @@
+/* Custom CSS - Only essential styles not covered by Tailwind */
+
+/* Float Animation for Background Shapes */
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(50px, -50px) scale(1.1);
+    }
+    66% {
+        transform: translate(-30px, 30px) scale(0.9);
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Mobile Menu Active State */
+#navMenu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile Menu Toggle Animation */
+#navToggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+#navToggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#navToggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Navbar Active Link */
+.nav-link.active {
+    color: #2d5016;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Smooth Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #faf8f3;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2d5016;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1f3910;
+}
+
+/* Loading State for Images */
+img {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+img[loading="eager"] {
+    opacity: 1;
+    animation: none;
+}
+
+/* Form Input Focus Enhancement */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* Notification Animations */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+}
+
+/* Form Error Shake Animation */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-8px); }
+    75% { transform: translateX(8px); }
+}
+
+input.error,
+textarea.error,
+select.error {
+    border-color: #f44336 !important;
+    animation: shake 0.4s ease;
+}
+
+/* Print Styles */
+@media print {
+    nav,
+    footer,
+    #scrollProgress {
+        display: none !important;
+    }
+    
+    section {
+        page-break-inside: avoid;
+    }
+}

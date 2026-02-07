@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods Bay - Premium B2B Food Products Supplier | Wholesale Natural Foods</title>
+    <meta name="description" content="Foods Bay is India's trusted B2B supplier of premium pickles, honey, oats, herbs, seasonings, jams, oils, and natural food products. Partner with us for quality wholesale solutions.">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#2d5016',
+                            light: '#3d6b1f',
+                            dark: '#1f3910',
+                        },
+                        secondary: {
+                            DEFAULT: '#f4a641',
+                            dark: '#d68910',
+                        },
+                        cream: '#faf8f3',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'float': 'float 20s ease-in-out infinite',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-900 bg-cream overflow-x-hidden">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md transition-all duration-300 lg:px-20 px-3">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-16">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <img src="logo.png" alt="Foods Bay Logo" class="w-10 h-11 sm:w-10 sm:h-12 transition-transform duration-300 group-hover:rotate-[-10deg] group-hover:scale-105" loading="eager">
+                    <span class="font-serif text-xl sm:text-2xl font-bold text-primary">Foodsbay India</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden lg:flex items-center gap-8 xl:gap-10">
+                    <li><a href="#home" class="nav-link text-sm font-medium text-gray-600 hover:text-primary transition-colors duration-200 relative after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Home</a></li>
+                    <li><a href="#about" class="nav-link text-sm font-medium text-gray-600 hover:text-primary transition-colors duration-200 relative after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">About</a></li>
+                    <li><a href="#products" class="nav-link text-sm font-medium text-gray-600 hover:text-primary transition-colors duration-200 relative after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Products</a></li>
+                    <li><a href="#why-us" class="nav-link text-sm font-medium text-gray-600 hover:text-primary transition-colors duration-200 relative after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Why Us</a></li>
+                    <li><a href="#process" class="nav-link text-sm font-medium text-gray-600 hover:text-primary transition-colors duration-200 relative after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Our Process</a></li>
+                    <li><a href="#contact" class="bg-gradient-to-r from-primary to-primary-light text-white px-6 py-2.5 rounded-full font-medium text-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">Partner With Us</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <button id="navToggle" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+                    <span class="block w-7 h-0.5 bg-primary transition-all duration-300"></span>
+                    <span class="block w-7 h-0.5 bg-primary transition-all duration-300"></span>
+                    <span class="block w-7 h-0.5 bg-primary transition-all duration-300"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="navMenu" class="lg:hidden fixed top-16 left-0 right-0 bg-white shadow-xl transform -translate-y-full opacity-0 invisible transition-all duration-300">
+            <ul class="flex flex-col gap-4 p-6">
+                <li><a href="#home" class="block text-base font-medium text-gray-600 hover:text-primary transition-colors duration-200 py-2">Home</a></li>
+                <li><a href="#about" class="block text-base font-medium text-gray-600 hover:text-primary transition-colors duration-200 py-2">About</a></li>
+                <li><a href="#products" class="block text-base font-medium text-gray-600 hover:text-primary transition-colors duration-200 py-2">Products</a></li>
+                <li><a href="#why-us" class="block text-base font-medium text-gray-600 hover:text-primary transition-colors duration-200 py-2">Why Us</a></li>
+                <li><a href="#process" class="block text-base font-medium text-gray-600 hover:text-primary transition-colors duration-200 py-2">Our Process</a></li>
+                <li><a href="#contact" class="block bg-gradient-to-r from-primary to-primary-light text-white px-6 py-3 rounded-full font-medium text-center">Partner With Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center pt-24 pb-12 lg:pt-20 lg:pb-20 overflow-hidden lg:px-20 px-3">
+        <!-- Background Shapes -->
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute w-96 h-96 md:w-[500px] md:h-[500px] bg-gradient-to-br from-primary-light to-primary rounded-full opacity-20 blur-3xl top-[-10%] right-[-5%] animate-float"></div>
+            <div class="absolute w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-secondary to-secondary-dark rounded-full opacity-20 blur-3xl bottom-[-10%] left-[-5%] animate-float" style="animation-delay: 7s;"></div>
+            <div class="absolute w-60 h-60 md:w-72 md:h-72 bg-gradient-to-br from-green-500 to-primary rounded-full opacity-20 blur-3xl top-[40%] left-[40%] animate-float" style="animation-delay: 14s;"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left">
+                    <div data-aos="fade-down" data-aos-duration="800" class="inline-flex items-center gap-2 px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-600 mb-6 shadow-sm">
+                        <span class="text-lg">🌿</span>
+                        <span>Premium B2B Food Supplier</span>
+                    </div>
+                    
+                    <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" class="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight mb-6">
+                        Nourishing Partnerships,<br>
+                        <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">One Product at a Time</span>
+                    </h1>
+                    
+                    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="text-base sm:text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Your trusted partner for premium wholesale food products. From authentic Indian pickles to pure honey, we deliver quality that your customers will love.
+                    </p>
+                    
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" class="flex flex-col sm:flex-row gap-4 mb-10 justify-center lg:justify-start">
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-primary-light text-white rounded-full font-medium shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            Start Partnership
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#products" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary border-2 border-gray-200 rounded-full font-medium hover:border-primary hover:bg-cream transition-all duration-300">
+                            View Catalog
+                        </a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" class="flex flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-8">
+                        <div class="text-center">
+                            <div class="font-serif text-4xl sm:text-5xl font-bold text-primary mb-2 stat-number" data-target="500">0</div>
+                            <div class="text-sm text-gray-600">Happy Partners</div>
+                        </div>
+                        <div class="hidden sm:block w-px h-12 bg-gray-300"></div>
+                        <div class="text-center">
+                            <div class="font-serif text-4xl sm:text-5xl font-bold text-primary mb-2 stat-number" data-target="50">0</div>
+                            <div class="text-sm text-gray-600">Premium Products</div>
+                        </div>
+                        <div class="hidden sm:block w-px h-12 bg-gray-300"></div>
+                        <div class="text-center">
+                            <div class="font-serif text-4xl sm:text-5xl font-bold text-primary mb-2 stat-number" data-target="15">0</div>
+                            <div class="text-sm text-gray-600">States Covered</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Visual -->
+                <!-- <div class="relative h-[400px] sm:h-[500px] lg:h-[600px] mt-8 lg:mt-0" data-aos="fade-left" data-aos-duration="1000">
+
+                    <div class="absolute top-[5%] left-[10%] bg-white rounded-2xl shadow-xl p-6 sm:p-2 transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="text-5xl sm:text-6xl mb-3 w-52">
+                            <img src="./images/Garlic pickle.png" alt="">
+                        </div>
+                        <div class="text-sm sm:text-base font-medium text-gray-700">Authentic Pickles</div>
+                    </div>
+                    <div class="absolute top-[40%] right-[5%] bg-white rounded-2xl shadow-xl p-6 sm:p-8 transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="text-5xl sm:text-6xl mb-3 w-48">
+                            <img src="./images/Jamun honey.png" alt="">
+                        </div>
+                        <div class="text-sm sm:text-base font-medium text-gray-700">Pure Honey</div>
+                    </div>
+                  
+                    <div class="absolute top-[15%] right-[30%] bg-white rounded-2xl shadow-xl p-6 sm:p-8 transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="text-5xl sm:text-6xl mb-3 w-44">
+                            <img src="./images/chilli flakes.png"  alt="">
+                        </div>
+                        <div class="text-sm sm:text-base font-medium text-gray-700">Fresh Herbs</div>
+                    </div>
+                </div> -->
+
+                <div class="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] mt-8 lg:mt-0" data-aos="fade-left" data-aos-duration="1000">
+    <!-- Card 1: Authentic Pickles -->
+    <div class="absolute top-[2%] sm:top-[5%] left-[2%] sm:left-[10%] bg-white rounded-lg sm:rounded-2xl shadow-xl p-2 sm:p-4 lg:p-6 transform hover:scale-105 transition-transform duration-300 w-[35%] sm:w-[35%] md:w-auto md:max-w-[200px] lg:max-w-[220px]" data-aos="zoom-in" data-aos-delay="200">
+        <div class="mb-1 sm:mb-2 lg:mb-3">
+            <img src="./images/Garlic pickle.png" alt="Garlic Pickle" class="w-full h-auto">
+        </div>
+        <div class="text-[8px] sm:text-xs lg:text-base font-medium text-gray-700 text-center leading-tight">Authentic Pickles</div>
+    </div>
+    
+    <!-- Card 2: Pure Honey -->
+    <div class="absolute bottom-[8%] sm:bottom-[15%] md:top-[40%] right-[2%] sm:right-[5%] bg-white rounded-lg sm:rounded-2xl shadow-xl p-2 sm:p-4 lg:p-6 transform hover:scale-105 transition-transform duration-300 w-[35%] sm:w-[32%] md:w-auto md:max-w-[180px] lg:max-w-[210px]" data-aos="zoom-in" data-aos-delay="400">
+        <div class="mb-1 sm:mb-2 lg:mb-3">
+            <img src="./images/Jamun honey.png" alt="Jamun Honey" class="w-full h-auto">
+        </div>
+        <div class="text-[8px] sm:text-xs lg:text-base font-medium text-gray-700 text-center leading-tight">Pure Honey</div>
+    </div>
+    
+    <!-- Card 3: Fresh Herbs -->
+    <div class="absolute top-[30%] sm:top-[45%] md:top-[25%] left-[30%] sm:left-[32%] md:right-[30%] md:left-auto bg-white rounded-lg sm:rounded-2xl shadow-xl p-2 sm:p-4 lg:p-6 transform hover:scale-105 transition-transform duration-300 w-[35%] sm:w-[30%] md:w-auto md:max-w-[170px] lg:max-w-[190px] z-10" data-aos="zoom-in" data-aos-delay="800">
+        <div class="mb-1 sm:mb-2 lg:mb-3">
+            <img src="./images/chilli flakes.png" alt="Chilli Flakes" class="w-full h-auto">
+        </div>
+        <div class="text-[8px] sm:text-xs lg:text-base font-medium text-gray-700 text-center leading-tight">Fresh Herbs</div>
+    </div>
+</div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2" data-aos="fade-up" data-aos-delay="1000">
+            <span class="text-sm text-gray-500">Scroll to Explore</span>
+            <div class="w-6 h-10 border-2 border-gray-300 rounded-full flex items-start justify-center p-2">
+                <div class="w-1.5 h-3 bg-primary rounded-full animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-20 lg:py-28 bg-white lg:px-20 px-3">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 lg:mb-16" data-aos="fade-up">
+                <span class="inline-block text-xs sm:text-sm font-semibold uppercase tracking-wider text-primary mb-4">About Foods Bay</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Crafting Excellence in<br>Every Product</h2>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <!-- About Text -->
+                <div data-aos="fade-right" data-aos-duration="800">
+                    <p class="text-lg sm:text-xl text-gray-700 leading-relaxed mb-8">
+                        At Foods Bay, we believe that great food starts with great ingredients. As a leading B2B supplier, we've built our reputation on delivering premium quality products that meet the highest standards.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-primary font-bold text-sm">✓</div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-900 mb-2">Quality Assurance</h4>
+                                <p class="text-gray-600 leading-relaxed">Every product undergoes rigorous quality checks to ensure it meets our premium standards before reaching your business.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-primary font-bold text-sm">✓</div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-900 mb-2">Sustainable Sourcing</h4>
+                                <p class="text-gray-600 leading-relaxed">We partner with local farmers and producers who share our commitment to sustainable and ethical practices.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-primary font-bold text-sm">✓</div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-900 mb-2">Pan-India Distribution</h4>
+                                <p class="text-gray-600 leading-relaxed">Reliable logistics network ensuring timely delivery across all major cities and regions in India.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About Visual -->
+                <div class="relative" data-aos="fade-left" data-aos-duration="800">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-cream rounded-2xl p-6 sm:p-8 mb-2" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="text-4xl sm:text-5xl mb-4">🎯</div>
+                            <h4 class="font-semibold text-base sm:text-lg mb-2">Our Mission</h4>
+                            <p class="text-sm text-gray-600">Delivering authentic Indian flavors worldwide</p>
+                        </div>
+                        <div class="bg-cream rounded-2xl p-6 sm:p-8 mt-8" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="text-4xl sm:text-5xl mb-4">💎</div>
+                            <h4 class="font-semibold text-base sm:text-lg mb-2">Our Values</h4>
+                            <p class="text-sm text-gray-600">Quality, integrity, and partnership</p>
+                        </div>
+                        <div class="bg-cream rounded-2xl p-6 sm:p-8 -mt-4" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="text-4xl sm:text-5xl mb-4">🌱</div>
+                            <h4 class="font-semibold text-base sm:text-lg mb-2">Sustainability</h4>
+                            <p class="text-sm text-gray-600">Eco-friendly practices at every step</p>
+                        </div>
+                        <div class="bg-cream rounded-2xl p-6 sm:p-8 mt-4" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="text-4xl sm:text-5xl mb-4">🤝</div>
+                            <h4 class="font-semibold text-base sm:text-lg mb-2">Partnership</h4>
+                            <p class="text-sm text-gray-600">Growing together with our clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 sm:py-20 lg:py-28 bg-cream lg:px-20 px-3">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 lg:mb-16" data-aos="fade-up">
+                <span class="inline-block text-xs sm:text-sm font-semibold uppercase tracking-wider text-primary mb-4">Our Products</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Premium Quality Products</h2>
+                <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+                    Discover our extensive range of authentic and natural food products, carefully curated for B2B excellence.
+                </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Product Card 1 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 sm:h-56 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center text-7xl sm:text-8xl group-hover:scale-110 transition-transform duration-300">
+                        <img src="./product_images/pickles.webp" alt="authentic_pickles">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-gray-900 mb-3 mt-3">Authentic Pickles</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Traditional Indian pickles made with authentic recipes, perfect for retailers and restaurants.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Mango, Lemon, Mixed Vegetable
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Traditional & Modern Variants
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Long Shelf Life
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block text-primary font-medium hover:underline">Inquire Now →</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 2 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 sm:h-56 bg-gradient-to-br from-yellow-50 to-yellow-100 flex items-center justify-center text-7xl sm:text-8xl group-hover:scale-110 transition-transform duration-300">
+                        <img src="./product_images/honey.webp" alt="honey">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-gray-900 mb-3 mt-3">Pure Honey</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">100% natural honey sourced from trusted beekeepers across India's diverse regions.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Multi-flora & Single-origin
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Raw & Organic Options
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Lab Tested Purity
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block text-primary font-medium hover:underline">Inquire Now →</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 3 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 sm:h-56 bg-gradient-to-br from-amber-50 to-amber-100 flex items-center justify-center text-7xl sm:text-8xl group-hover:scale-110 transition-transform duration-300">
+                        <img src="./product_images/oats.webp" alt="oats">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-gray-900 mb-3 mt-3">Premium Oats</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">High-quality oats perfect for health-conscious consumers and food service businesses.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Rolled & Steel-cut Options
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Gluten-free Certified
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Bulk Packaging Available
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block text-primary font-medium hover:underline">Inquire Now →</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 4 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 sm:h-56 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center text-7xl sm:text-8xl group-hover:scale-110 transition-transform duration-300">
+                        <img src="./product_images/herbs.webp" alt="herbs">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-gray-900 mb-3 mt-3">Herbs & Seasonings</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Aromatic herbs and premium spice blends to elevate any culinary experience.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Fresh & Dried Herbs
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Custom Spice Blends
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Restaurant-grade Quality
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block text-primary font-medium hover:underline">Inquire Now →</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 5 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 sm:h-56 bg-gradient-to-br from-red-50 to-red-100 flex items-center justify-center text-7xl sm:text-8xl group-hover:scale-110 transition-transform duration-300">
+                        <img src="./product_images/jams.webp" alt="jams">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-gray-900 mb-3 mt-3">Jams & Chutneys</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Delicious preserves and chutneys made from the finest fruits and vegetables.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Multiple Flavor Options
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> No Artificial Preservatives
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Hotel & Cafe Ready
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block text-primary font-medium hover:underline">Inquire Now →</a>
+                    </div>
+                </div>
+                
+                <!-- Product Card 6 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 sm:h-56 bg-gradient-to-br from-yellow-50 to-yellow-100 flex items-center justify-center text-7xl sm:text-8xl group-hover:scale-110 transition-transform duration-300">
+                        <img src="./product_images/oils.webp" alt="oils">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-gray-900 mb-3 mt-3">Premium Oils</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Cold-pressed and refined oils for health-conscious cooking and commercial use.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Olive, Coconut, Mustard
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Cold-pressed Variants
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-primary">•</span> Food-grade Certified
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block text-primary font-medium hover:underline">Inquire Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="py-16 sm:py-20 lg:py-28 bg-white lg:px-20 px-3">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 lg:mb-16" data-aos="fade-up">
+                <span class="inline-block text-xs sm:text-sm font-semibold uppercase tracking-wider text-primary mb-4">Why Choose Us</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Your Trusted B2B Partner</h2>
+                <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+                    We go beyond just supplying products. We build lasting partnerships based on trust, quality, and mutual growth.
+                </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                <div class="text-center p-8 bg-cream rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 transform group-hover:rotate-6 transition-transform">
+                        ⚡
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">Quick Delivery</h3>
+                    <p class="text-gray-600 leading-relaxed">Fast and reliable shipping across India with real-time tracking.</p>
+                </div>
+                
+                <div class="text-center p-8 bg-cream rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-secondary-dark rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 transform group-hover:rotate-6 transition-transform">
+                        💰
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">Competitive Pricing</h3>
+                    <p class="text-gray-600 leading-relaxed">Best wholesale prices with flexible payment terms for partners.</p>
+                </div>
+                
+                <div class="text-center p-8 bg-cream rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 transform group-hover:rotate-6 transition-transform">
+                        ✅
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">Quality Guaranteed</h3>
+                    <p class="text-gray-600 leading-relaxed">All products are certified and undergo strict quality control.</p>
+                </div>
+                
+                <div class="text-center p-8 bg-cream rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 transform group-hover:rotate-6 transition-transform">
+                        🎯
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">Custom Solutions</h3>
+                    <p class="text-gray-600 leading-relaxed">Private labeling and packaging tailored to your brand needs.</p>
+                </div>
+            </div>
+            
+            <!-- Additional Benefits -->
+            <div class="mt-16 grid md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="500">
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl">
+                        📞
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg mb-2">24/7 Support</h4>
+                        <p class="text-gray-600 text-sm">Dedicated account managers available round the clock.</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl">
+                        📦
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg mb-2">Flexible Orders</h4>
+                        <p class="text-gray-600 text-sm">No minimum order quantity for regular partners.</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl">
+                        🌍
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg mb-2">Export Ready</h4>
+                        <p class="text-gray-600 text-sm">International quality standards and export documentation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Manufacturing -->
+
+    <section id="manufacturing" class="py-16 sm:py-20 lg:py-28 bg-cream lg:px-20 px-3">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-2xl mx-auto mb-20">
+      <span class="text-sm font-semibold tracking-wider text-primary uppercase">
+        Quality Assurance
+      </span>
+      <h2 class="text-4xl font-bold text-slate-900 mt-3">
+        Manufacturing Excellence
+      </h2>
+      <p class="text-slate-600 mt-4 leading-relaxed">
+        Our state-of-the-art facilities and stringent quality control ensure consistent product excellence
+      </p>
+    </div>
+
+    <!-- Content -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      
+      <!-- Steps -->
+      <div class="flex flex-col gap-8">
+        
+        <!-- Step 1 -->
+        <div class="flex gap-8 items-start">
+          <div class="w-[60px] h-[60px] bg-primary text-white rounded-2xl flex items-center justify-center text-2xl font-bold shrink-0">
+            01
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold text-slate-900 mb-2">
+              Raw Material Selection
+            </h4>
+            <p class="text-slate-600 leading-relaxed">
+              We source ingredients from certified suppliers and conduct thorough quality inspections to ensure only the best materials enter our production line.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex gap-8 items-start">
+          <div class="w-[60px] h-[60px] bg-primary text-white rounded-2xl flex items-center justify-center text-2xl font-bold shrink-0">
+            02
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold text-slate-900 mb-2">
+              Hygienic Processing
+            </h4>
+            <p class="text-slate-600 leading-relaxed">
+              Our ISO-certified manufacturing units maintain the highest hygiene standards with automated systems and trained personnel.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex gap-8 items-start">
+          <div class="w-[60px] h-[60px] bg-primary text-white rounded-2xl flex items-center justify-center text-2xl font-bold shrink-0">
+            03
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold text-slate-900 mb-2">
+              Quality Testing
+            </h4>
+            <p class="text-slate-600 leading-relaxed">
+              Every batch undergoes comprehensive laboratory testing for safety, purity, and quality parameters before packaging.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex gap-8 items-start">
+          <div class="w-[60px] h-[60px] bg-primary text-white rounded-2xl flex items-center justify-center text-2xl font-bold shrink-0">
+            04
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold text-slate-900 mb-2">
+              Secure Packaging
+            </h4>
+            <p class="text-slate-600 leading-relaxed">
+              Products are packaged in food-grade materials with proper sealing and labeling to maintain freshness during transit.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Visual -->
+      <div class="relative h-[500px] rounded-[25px] flex items-center justify-center text-7xl text-primary bg-gradient-to-br from-[#f0ede3] to-[#faf8f3]">
+        <img src="fac2.webp"   alt="" class="">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Certifications -->
+<section id="certifications" class="py-16 sm:py-20 lg:py-28 bg-white lg:px-20 px-3">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Section Header -->
+    <div class="text-center max-w-2xl mx-auto mb-20">
+      <span class="text-sm font-semibold tracking-wider text-primary uppercase">
+        Trust & Compliance
+      </span>
+      <h2 class="text-4xl font-bold text-slate-900 mt-3">
+        Certified Excellence
+      </h2>
+      <p class="text-slate-600 mt-4 leading-relaxed">
+        Our certifications demonstrate our commitment to quality, safety, and ethical business practices
+      </p>
+    </div>
+
+    <!-- Certifications Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+      
+      <!-- Card -->
+      <div
+        class="bg-[#f9f6ef] rounded-2xl flex justify-center items-center border-2 border-transparent
+               transition-all duration-300 hover:border-accent hover:-translate-y-1"
+      >
+        <div class="h-28 w-32  text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+          <img src="https://organicnationmages.s3.ap-south-1.amazonaws.com/certificates/fssi.webp" alt="">
+        </div>
+        <!-- <div class="text-lg font-semibold text-slate-900">
+          FSSAI Licensed
+        </div> -->
+      </div>
+
+      <!-- Card -->
+      <div
+        class="bg-[#f9f6ef] rounded-2xl flex justify-center items-center border-2 border-transparent
+               transition-all duration-300 hover:border-accent hover:-translate-y-1"
+      >
+        <div class="w-36 h-36 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+          <img src="https://organicnationmages.s3.ap-south-1.amazonaws.com/certificates/usoca.png" alt="">
+        </div>
+        <!-- <div class="text-lg font-semibold text-slate-900">
+          ISO 22000
+        </div> -->
+      </div>
+
+      <!-- Card -->
+      <div
+        class="bg-[#f9f6ef] rounded-2xl flex justify-center items-center border-2 border-transparent
+               transition-all duration-300 hover:border-accent hover:-translate-y-1"
+      >
+        <div class="w-24 h-24 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+         <img src="	https://organicnationmages.s3.ap-south-1.amazonaws.com/certificates/jaivik.webp" alt="">
+        </div>
+        <!-- <div class="text-lg font-semibold text-slate-900">
+          HACCP Certified
+        </div> -->
+      </div>
+
+      <!-- Card -->
+      <div
+        class="bg-[#f9f6ef] rounded-2xl flex justify-center items-center border-2 border-transparent
+               transition-all duration-300 hover:border-accent hover:-translate-y-1"
+      >
+        <div class="w-28 h-28 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+          <img src="https://organicnationmages.s3.ap-south-1.amazonaws.com/certificates/organic.webp" alt="">
+        <!-- </div>
+        <div class="text-lg font-semibold text-slate-900">
+          Export Ready
+        </div> -->
+      </div>
+
+    </div>
+      <!-- Card -->
+
+      <div
+        class="bg-[#f9f6ef] rounded-2xl flex justify-center items-center border-2 border-transparent
+               transition-all duration-300 hover:border-accent hover:-translate-y-1"
+      >
+        <div class="w-36 h-36 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+          <img src="https://organicnationmages.s3.ap-south-1.amazonaws.com/certificates/usda.webp" alt="">
+        <!-- </div>
+        <div class="text-lg font-semibold text-slate-900">
+          Export Ready
+        </div> -->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- B2B Capabilities -->
+
+<section id="capabilities" class="py-16 sm:py-20 lg:py-28 bg-cream lg:px-20 px-3">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Section Header -->
+    <div class="text-center max-w-2xl mx-auto mb-20">
+      <span class="text-sm font-semibold tracking-wider text-primary uppercase">
+        B2B Solutions
+      </span>
+      <h2 class="text-4xl font-bold text-slate-900 mt-3">
+        Comprehensive Business Capabilities
+      </h2>
+      <p class="text-slate-600 mt-4 leading-relaxed">
+        Tailored services designed specifically for wholesale, retail, and food service businesses
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+      <!-- Card -->
+      <div
+        class="bg-white rounded-2xl p-12 shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+               transition-all duration-400 hover:-translate-y-2.5
+               hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)]"
+      >
+        <div class="flex items-center gap-6 mb-8">
+          <div
+            class="w-[70px] h-[70px] rounded-xl text-white text-2xl flex items-center justify-center
+                   bg-gradient-to-br from-primary to-primaryLight"
+          >
+            📦
+          </div>
+          <h3 class="text-2xl font-semibold text-slate-900 font-serif">
+            Bulk Supply
+          </h3>
+        </div>
+
+        <ul class="space-y-4">
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Minimum order quantities from 100 kg
+          </li>
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Volume-based discount pricing
+          </li>
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Consistent quality across large orders
+          </li>
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Regular supply agreements available
+          </li>
+          <li class="flex items-center gap-4 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Inventory management support
+          </li>
+        </ul>
+      </div>
+
+      <!-- Card -->
+      <div
+        class="bg-white rounded-2xl p-12 shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+               transition-all duration-400 hover:-translate-y-2.5
+               hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)]"
+      >
+        <div class="flex items-center gap-6 mb-8">
+          <div
+            class="w-[70px] h-[70px] rounded-xl text-white text-2xl flex items-center justify-center
+                   bg-gradient-to-br from-primary to-primaryLight"
+          >
+            🏷️
+          </div>
+          <h3 class="text-2xl font-semibold text-slate-900 font-serif">
+            Private Labeling
+          </h3>
+        </div>
+
+        <ul class="space-y-4">
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Custom brand packaging design
+          </li>
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Your logo and label specifications
+          </li>
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Flexible packaging sizes and formats
+          </li>
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Complete regulatory compliance
+          </li>
+          <li class="flex items-center gap-4 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Low minimum order quantities
+          </li>
+        </ul>
+      </div>
+
+      <!-- Card -->
+      <div
+        class="bg-white rounded-2xl p-12 shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+               transition-all duration-400 hover:-translate-y-2.5
+               hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)]"
+      >
+        <div class="flex items-center gap-6 mb-8">
+          <div
+            class="w-[70px] h-[70px] rounded-xl text-white text-2xl flex items-center justify-center
+                   bg-gradient-to-br from-primary to-primaryLight"
+          >
+            🎨
+          </div>
+          <h3 class="text-2xl font-semibold text-slate-900 font-serif">
+            Custom Solutions
+          </h3>
+        </div>
+
+        <ul class="space-y-4">
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Product customization options
+          </li>
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Recipe modifications available
+          </li>
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Specialized formulations
+          </li>
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Unique packaging requirements
+          </li>
+          <li class="flex items-center gap-4 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Product development consultation
+          </li>
+        </ul>
+      </div>
+
+      <!-- Card -->
+      <div
+        class="bg-white rounded-2xl p-12 shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+               transition-all duration-400 hover:-translate-y-2.5
+               hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)]"
+      >
+        <div class="flex items-center gap-6 mb-8">
+          <div
+            class="w-[70px] h-[70px] rounded-xl text-white text-2xl flex items-center justify-center
+                   bg-gradient-to-br from-primary to-primaryLight"
+          >
+            🚛
+          </div>
+          <h3 class="text-2xl font-semibold text-slate-900 font-serif">
+            Logistics & Delivery
+          </h3>
+        </div>
+
+        <ul class="space-y-4">
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Pan-India distribution network
+          </li>
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Temperature-controlled transport
+          </li>
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Real-time shipment tracking
+          </li>
+          <li class="flex items-center gap-4 pb-4 border-b border-slate-200 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Scheduled delivery options
+          </li>
+          <li class="flex items-center gap-4 text-slate-600">
+            <span class="text-primary font-bold text-lg">✓</span>
+            Door-to-door service
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- our clients  -->
+ <!-- Our Clients Section -->
+<section id="clients" class="py-16 sm:py-20 lg:py-28 bg-white lg:px-20 px-3">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="text-center mb-12 lg:mb-16" data-aos="fade-up">
+      <span class="inline-block text-xs sm:text-sm font-semibold uppercase tracking-wider text-primary mb-4">Our Partners</span>
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Trusted by Leading Businesses</h2>
+      <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+        We're proud to partner with diverse businesses across India, from retail chains to premium restaurants.
+      </p>
+    </div>
+
+    <!-- Clients Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8 mb-12">
+      <!-- Client Card -->
+      <div class="bg-cream rounded-2xl p-6 sm:p-8 flex items-center justify-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group" data-aos="zoom-in" data-aos-delay="100">
+        <img src="./client_logo/bb.png" alt="client_logo">
+        <!-- <div class="text-6xl sm:text-7xl group-hover:scale-110 transition-transform duration-300">🏪</div> -->
+      </div>
+
+      <div class="bg-cream rounded-2xl p-6 sm:p-8 flex items-center justify-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group" data-aos="zoom-in" data-aos-delay="150">
+        <img src="./client_logo/cd.png" alt="client_logo">
+
+      </div>
+
+      <div class="bg-cream rounded-2xl p-6 sm:p-8 flex items-center justify-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group" data-aos="zoom-in" data-aos-delay="200">
+        <img src="./client_logo/pn.png" alt="client_logo">
+      </div>
+
+      <div class="bg-cream rounded-2xl p-6 sm:p-8 flex items-center justify-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group" data-aos="zoom-in" data-aos-delay="250">
+        <img src="./client_logo/lf.png" alt="client_logo">
+
+      </div>
+
+      <div class="bg-cream rounded-2xl p-6 sm:p-8 flex items-center justify-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group" data-aos="zoom-in" data-aos-delay="300">
+        <img src="./client_logo/swiggy.png" alt="client_logo">
+      </div>
+    </div>
+
+    <!-- Client Types -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up" data-aos-delay="400">
+      <div class="text-center p-6 bg-cream/50 rounded-xl">
+        <div class="font-serif text-4xl font-bold text-primary mb-2">150+</div>
+        <div class="text-sm text-gray-600">Retail Stores</div>
+      </div>
+
+      <div class="text-center p-6 bg-cream/50 rounded-xl">
+        <div class="font-serif text-4xl font-bold text-primary mb-2">200+</div>
+        <div class="text-sm text-gray-600">Restaurants & Cafes</div>
+      </div>
+
+      <div class="text-center p-6 bg-cream/50 rounded-xl">
+        <div class="font-serif text-4xl font-bold text-primary mb-2">80+</div>
+        <div class="text-sm text-gray-600">Hotels</div>
+      </div>
+
+      <div class="text-center p-6 bg-cream/50 rounded-xl">
+        <div class="font-serif text-4xl font-bold text-primary mb-2">70+</div>
+        <div class="text-sm text-gray-600">Distributors</div>
+      </div>
+    </div>
+
+    <!-- Testimonial Highlight -->
+    <div class="mt-16 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="500">
+      <div class="bg-gradient-to-br from-primary to-primary-light text-white rounded-2xl p-8 sm:p-12 relative overflow-hidden">
+        <div class="absolute top-0 right-0 text-[200px] opacity-10 leading-none">❝</div>
+        <div class="relative z-10">
+          <p class="text-lg sm:text-xl mb-6 leading-relaxed italic">
+            "Foods Bay has been our reliable partner for over 3 years. Their consistent quality and timely delivery have helped us maintain our reputation for authentic flavors."
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-2xl">👤</div>
+            <div>
+              <div class="font-semibold text-lg">Rajesh Kumar</div>
+              <div class="text-white/80 text-sm">Owner, Spice Garden Restaurant Chain</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-16 sm:py-20 lg:py-28 bg-gradient-to-br from-primary to-primary-light text-white lg:px-20 px-3">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 lg:mb-16" data-aos="fade-up">
+                <span class="inline-block text-xs sm:text-sm font-semibold uppercase tracking-wider text-secondary mb-4">Our Process</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Simple Partnership Journey</h2>
+                <p class="text-base sm:text-lg text-white/90 max-w-2xl mx-auto">
+                    Getting started with Foods Bay is easy. Follow these simple steps to begin your partnership.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-white/30 -translate-x-1/2"></div>
+                    
+                    <!-- Step 1 -->
+                    <div class="relative mb-12" data-aos="fade-right" data-aos-delay="100">
+                        <div class="flex md:items-center flex-col-reverse md:flex-row">
+                            <div class="md:w-1/2 md:pr-12 text-center md:text-right mb-4 md:mb-0">
+                                <h3 class="font-serif text-2xl font-bold mb-3">1. Initial Contact</h3>
+                                <p class="text-white/80">Reach out to us via phone, email, or our contact form to express your interest.</p>
+                            </div>
+                            <div class="flex justify-center md:absolute md:left-1/2 md:-translate-x-1/2">
+                                <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-xl">
+                                    1
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="relative mb-12" data-aos="fade-left" data-aos-delay="200">
+                        <div class="md:flex md:items-center">
+                            <div class="md:w-1/2 md:pr-12"></div>
+                            <div class="flex justify-center md:absolute md:left-1/2 md:-translate-x-1/2">
+                                <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-xl">
+                                    2
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 text-center md:text-left mb-4 md:mb-0">
+                                <h3 class="font-serif text-2xl font-bold mb-3">2. Consultation</h3>
+                                <p class="text-white/80">Our team discusses your requirements, product needs, and business goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="relative mb-12" data-aos="fade-right" data-aos-delay="300">
+                        <div class="flex flex-col-reverse md:flex-row md:items-center">
+                            <div class="md:w-1/2 md:pr-12 text-center md:text-right mb-4 md:mb-0">
+                                <h3 class="font-serif text-2xl font-bold mb-3">3. Sample & Pricing</h3>
+                                <p class="text-white/80">We provide product samples and customized pricing based on your volume.</p>
+                            </div>
+                            <div class="flex justify-center md:absolute md:left-1/2 md:-translate-x-1/2">
+                                <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-xl">
+                                    3
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="relative" data-aos="fade-left" data-aos-delay="400">
+                        <div class="md:flex md:items-center">
+                            <div class="md:w-1/2 md:pr-12"></div>
+                            <div class="flex justify-center md:absolute md:left-1/2 md:-translate-x-1/2">
+                                <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold shadow-xl">
+                                    4
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 text-center md:text-left">
+                                <h3 class="font-serif text-2xl font-bold mb-3">4. Partnership Begins</h3>
+                                <p class="text-white/80">Once approved, we set up your account and schedule your first delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="500">
+                <a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 bg-secondary text-gray-900 rounded-full font-semibold text-lg shadow-xl hover:bg-secondary-dark hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                    Start Your Partnership Today
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-20 lg:py-28 bg-white lg:px-20 px-3">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 lg:mb-16" data-aos="fade-up">
+                <span class="inline-block text-xs sm:text-sm font-semibold uppercase tracking-wider text-primary mb-4">Get In Touch</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Let's Start a Partnership</h2>
+            </div>
+            
+            <div class="grid lg:grid-cols-5 gap-10 lg:gap-12">
+                <!-- Contact Info -->
+                <div class="lg:col-span-2" data-aos="fade-right">
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold mb-4">Ready to grow your business?</h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Contact us today to discuss how Foods Bay can become your trusted B2B food supplier partner.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl">
+                                📧
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Email Us</h4>
+                                <a href="mailto:partner@foodsbay.in" class="text-gray-600 hover:text-primary transition-colors">partner@foodsbay.in</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl">
+                                📞
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Call Us</h4>
+                                <a href="tel:+911234567890" class="text-gray-600 hover:text-primary transition-colors">+91 123 456 7890</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl">
+                                📍
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Visit Us</h4>
+                                <p class="text-gray-600">Mumbai, Maharashtra, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="lg:col-span-3" data-aos="fade-left">
+                    <form id="contactForm" class="bg-cream rounded-2xl p-6 sm:p-8 lg:p-10 space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none">
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company Name *</label>
+                                <input type="text" id="company" name="company"  class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none">
+                            </div>
+                        </div>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email"  class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="business" class="block text-sm font-medium text-gray-700 mb-2">Business Type</label>
+                            <select id="business" name="business" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none bg-white">
+                                <option value="">Select your business type</option>
+                                <option value="retailer">Retailer</option>
+                                <option value="restaurant">Restaurant/Cafe</option>
+                                <option value="distributor">Distributor</option>
+                                <option value="hotel">Hotel</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="products" class="block text-sm font-medium text-gray-700 mb-2">Products Interested In</label>
+                            <input type="text" id="products" name="products" placeholder="e.g., Honey, Pickles, Oils" class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your requirements..." class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none resize-none"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-primary-light text-white rounded-full font-semibold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white py-12 sm:py-16 lg:px-20 px-3">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+                <!-- Footer Col 1 -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="logo.png" alt="Foods Bay" class="w-11 h-11" loading="lazy">
+                        <span class="font-serif text-xl font-bold">Foodsbay India</span>
+                    </div>
+                    <p class="text-white/70 mb-6 leading-relaxed">
+                        Your trusted partner for premium wholesale food products across India.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" aria-label="Facebook" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:-translate-y-1 transition-all duration-300">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:-translate-y-1 transition-all duration-300">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:-translate-y-1 transition-all duration-300">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="WhatsApp" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:-translate-y-1 transition-all duration-300">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Footer Col 2 -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-white/70 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#products" class="text-white/70 hover:text-white transition-colors">Our Products</a></li>
+                        <li><a href="#why-us" class="text-white/70 hover:text-white transition-colors">Why Choose Us</a></li>
+                        <li><a href="#process" class="text-white/70 hover:text-white transition-colors">Partnership Process</a></li>
+                        <li><a href="#contact" class="text-white/70 hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Col 3 -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#products" class="text-white/70 hover:text-white transition-colors">Pickles</a></li>
+                        <li><a href="#products" class="text-white/70 hover:text-white transition-colors">Honey</a></li>
+                        <li><a href="#products" class="text-white/70 hover:text-white transition-colors">Oats</a></li>
+                        <li><a href="#products" class="text-white/70 hover:text-white transition-colors">Herbs & Seasonings</a></li>
+                        <li><a href="#products" class="text-white/70 hover:text-white transition-colors">Jams & Chutney</a></li>
+                        <li><a href="#products" class="text-white/70 hover:text-white transition-colors">Oils</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Col 4 -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Business Info</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors">Bulk Pricing</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors">Private Labeling</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors">Quality Certifications</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors">Shipping Policy</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-white transition-colors">Payment Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+                <p class="text-white/70">&copy; 2025 Foods Bay. All rights reserved.</p>
+                <div class="flex items-center gap-4 text-white/70">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scrollProgress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary to-secondary z-50 transition-all duration-100"></div>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
