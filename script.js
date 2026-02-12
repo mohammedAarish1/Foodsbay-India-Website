@@ -79,7 +79,7 @@ function animateCounter(element, target, duration = 2000) {
   const timer = setInterval(() => {
     start += increment;
     if (start >= target) {
-      element.textContent = target + (target >= 100 ? "+" : "");
+      element.textContent = target + (target >= 1 ? "+" : "");
       clearInterval(timer);
     } else {
       element.textContent = Math.floor(start);
@@ -156,70 +156,120 @@ const contactForm = document.getElementById("contactForm");
 contactForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
+  // Get button elements
+  const submitBtn = document.getElementById("submitBtn");
+  const btnText = document.getElementById("btnText");
+  const btnLoader = document.getElementById("btnLoader");
+  const btnArrow = document.getElementById("btnArrow");
+
+  // Disable button and show loading
+  submitBtn.disabled = true;
+  btnText.textContent = "Sending...";
+  btnLoader.classList.remove("hidden");
+  btnArrow.classList.add("hidden");
+
   // Get form data
   const formData = new FormData(contactForm);
   const data = Object.fromEntries(formData);
 
   try {
-    const response = await fetch("http://localhost:8000/api/admin/foodsbay/query/form/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    const response = await fetch(
+      "http://localhost:8000/api/admin/foodsbay/query/form/submit",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
       },
-      body: JSON.stringify(data),
-    });
+    );
 
     if (!response.ok) {
       throw new Error("Failed to submit form");
     }
 
     const result = await response.json();
-console.log('resultt', result)
-    showNotification(
-      "Thank you for your message! We will contact you soon.",
-      "success",
-    );
+    if (result.success) {
+      showNotification(
+        "Thank you for your message! We will contact you soon.",
+        "success",
+      );
+      contactForm.reset();
+    }
 
-    contactForm.reset();
-    console.log("API response:", result);
   } catch (error) {
     console.error(error);
     showNotification("Something went wrong. Please try again later.", "error");
+  } finally {
+    // Re-enable button and hide loading
+    submitBtn.disabled = false;
+    btnText.textContent = "Send Message";
+    btnLoader.classList.add("hidden");
+    btnArrow.classList.remove("hidden");
   }
 
   // Show success notification
-  showNotification(
-    "Thank you for your message! We will contact you soon.",
-    "success",
-  );
+  // showNotification(
+  //   "Thank you for your message! We will contact you soon.",
+  //   "success",
+  // );
 
   // Reset form
-  contactForm.reset();
+  // contactForm.reset();
 
   // Log for development (replace with actual API call)
-  console.log("Form submitted:", data);
+  // console.log("Form submitted:", data);
 });
 
 // Notification Function
+// function showNotification(message, type = "success") {
+//   const notification = document.createElement("div");
+//   notification.className = `fixed top-24 right-4 md:right-8 max-w-md z-50 animate-slideIn`;
+//   notification.innerHTML = `
+//         <div class="bg-${type === "success" ? "green" : "red"}-500 text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-4">
+//             <span class="text-2xl">${type === "success" ? "✓" : "✕"}</span>
+//             <p class="font-medium">${message}</p>
+//         </div>
+//     `;
+
+//   document.body.appendChild(notification);
+
+//   // Auto remove after 4 seconds
+//   setTimeout(() => {
+//     notification.style.animation = "slideOutRight 0.4s ease-out";
+//     setTimeout(() => {
+//       notification.remove();
+//     }, 400);
+//   }, 4000);
+// }
+
+
 function showNotification(message, type = "success") {
   const notification = document.createElement("div");
   notification.className = `fixed top-24 right-4 md:right-8 max-w-md z-50 animate-slideIn`;
   notification.innerHTML = `
-        <div class="bg-${type === "success" ? "green" : "red"}-500 text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-4">
-            <span class="text-2xl">${type === "success" ? "✓" : "✕"}</span>
-            <p class="font-medium">${message}</p>
-        </div>
-    `;
+    <div class="bg-${type === "success" ? "green" : "red"}-500 text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-4">
+      <span class="text-2xl">${type === "success" ? "✓" : "✕"}</span>
+      <p class="font-medium flex-1">${message}</p>
+      <button onclick="this.closest('.fixed').remove()" 
+        class="ml-2 text-white/80 hover:text-white text-xl font-bold leading-none transition-colors duration-200 cursor-pointer">
+        ✕
+      </button>
+    </div>
+  `;
 
   document.body.appendChild(notification);
 
-  // Auto remove after 4 seconds
-  setTimeout(() => {
+  // Auto remove after 60 seconds
+  const autoRemove = setTimeout(() => {
     notification.style.animation = "slideOutRight 0.4s ease-out";
-    setTimeout(() => {
-      notification.remove();
-    }, 400);
-  }, 4000);
+    setTimeout(() => notification.remove(), 400);
+  }, 60000);
+
+  // Clear timeout if manually closed
+  notification.querySelector("button").addEventListener("click", () => {
+    clearTimeout(autoRemove);
+  });
 }
 
 // Add slideIn animation
@@ -305,22 +355,22 @@ const debouncedHighlight = debounce(highlightNavigation, 100);
 window.addEventListener("scroll", debouncedHighlight, { passive: true });
 
 // Console Message for Developers
-console.log(
-  "%c🌿 Foods Bay - Premium B2B Food Supplier",
-  "font-size: 20px; color: #2d5016; font-weight: bold;",
-);
-console.log(
-  "%cInterested in working with us? Visit our website or send us a message!",
-  "font-size: 14px; color: #4a4a4a;",
-);
-console.log(
-  "%c💻 Built with Tailwind CSS & AOS Animations",
-  "font-size: 12px; color: #7a7a7a;",
-);
+// console.log(
+//   "%c🌿 Foods Bay - Premium B2B Food Supplier",
+//   "font-size: 20px; color: #2d5016; font-weight: bold;",
+// );
+// console.log(
+//   "%cInterested in working with us? Visit our website or send us a message!",
+//   "font-size: 14px; color: #4a4a4a;",
+// );
+// console.log(
+//   "%c💻 Built with Tailwind CSS & AOS Animations",
+//   "font-size: 12px; color: #7a7a7a;",
+// );
 
 // Analytics Tracking (Placeholder)
 function trackEvent(eventName, eventData) {
-  console.log("Event tracked:", eventName, eventData);
+  // console.log("Event tracked:", eventName, eventData);
   // Replace with actual analytics code (Google Analytics, etc.)
   // Example: gtag('event', eventName, eventData);
 }
