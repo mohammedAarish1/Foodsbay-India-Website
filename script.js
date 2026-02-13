@@ -174,7 +174,7 @@ contactForm.addEventListener("submit", async (e) => {
 
   try {
     const response = await fetch(
-      "https://foodsbay.com/api/admin/foodsbay/query/form/submit",
+      "https://dpzi63xcomvst.cloudfront.net/api/admin/foodsbay/query/form/submit",
       {
         method: "POST",
         headers: {
